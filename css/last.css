@@ -1,0 +1,155 @@
+body{
+  margin: 0;
+  padding: 0;
+  font-family: cursive;
+    background-image: image(ghibli.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 110vh;
+}
+
+.formulario{
+   position:absolute;
+   top: 100px;
+   left: 450px;
+   width: 500px;
+   height: 60vh;
+   background-color: rgba(255, 255, 255, 0.1);
+   border: 1px solid white;
+   border-radius: 10px;
+   backdrop-filter:blur(5px);
+ }
+ .formulario h1{
+   text-align: center;
+   padding: 40px 40px   20px 100px;
+   border-bottom: 1px solid #FFFFFF;
+ }
+ .formulario form{
+   padding: 0 40px;
+   box-sizing: border-box;
+  }
+  .form .username{
+    position: relative;
+    border-bottom: 2px solid #FFFFFF;
+    margin: 30px 0;
+  }
+  .username input{
+    width: 51%;
+    padding: 0 5px;
+    height: 20px;
+    font-size: 16px;
+  border-bottom: 1px solid #ffffff;
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter:blur(1px);
+
+  }
+  .username label{
+    position: absolute;
+    top: 38%;
+    left: 280px;
+    color:  #000000;
+    font-size: 16px;
+  }
+
+  .form .emal{
+    position: relative;
+    border-bottom: 2px solid #FFFFFF;
+    margin: 30px 0;
+  }
+  .email input{
+    position: relative;
+    top: 15px;
+    width: 51%;
+    padding: 0 5px;
+    height: 20px;
+    font-size: 16px;
+  border-bottom: 1px solid #ffffff;
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter:blur(1px);
+
+  }
+  .email label{
+    position: absolute;
+    top: 47%;
+    left: 280px;
+    color:  #000000;
+    font-size: 16px;
+  }
+
+  .form .contraseña{
+    position: relative;
+    border-bottom: 2px solid #FFFFFF;
+    margin: 30px 0;
+}
+  .contraseña input{
+    position: relative;
+    top: 25px;
+    width: 51%;
+    padding: 0 5px;
+    height: 20px;
+    font-size: 16px;
+  border-bottom: 1px solid #ffffff;
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter:blur(1px);
+
+  }
+  .contraseña label{
+    position: absolute;
+    top: 55%;
+    left: 280px;
+    color:  #000000;
+    font-size: 16px;
+  }
+
+
+
+  .username span::before{
+    content: '';
+    position: relative;
+    top: 35px;
+    left: 0;
+    width: 0%;
+    height: 100px;
+    background: #6C3483;
+
+  }
+  .username input:focus ~ label,
+    .username input:focus ~ label{
+    color:  #175D9C;
+  }
+  .username input:focus ~ span::before,
+    .username input:focus ~ span::before{
+      width: 100%;
+      color:  #175D9C;
+}
+
+input[type="submit"]{
+  position: relative;
+  top: 75px;
+  width: 100%;
+  height: 40px;
+  border: 1px solid;
+  background: #6C3483;
+  border-radius: 10px;
+  font-size: 18px;
+  color: #FFFFFF;
+  cursor: pointer;
+  outline: none;
+}
+    input[type="submit"]:hover{
+      border-color: #6C3483;
+
+    }
+    .registrarse{
+      margin: 30px 0;
+      text-align: center;
+      font-size: 16px;
+      color: #000000;
+    }
+    .registrarse a{
+      color: #175D9C;
+      text-decoration: none;
+    }
+    .registrarse a:hover{
+      text-decoration: underline;
+    }
